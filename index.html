@@ -106,10 +106,7 @@
     <div class="hero-body">
       <img src="static/ICGAN/Architecture.png" id="tree" alt="Architecture Image" style="width: 100%;">
       <h2 class="subtitle has-text-centered">
-        We propose an implicit conditioning method to achieve smooth interpolation between different classes of 
-        sounds with discrete labels. As shown in our architecture, our generator is conditioned on a vector sampled 
-        from a Gaussian distribution with mean and variance parameterized from the encoder. The encoder learns
-        the categorical information from the input Mel spectrograms and guides the generator in an implicit way.
+        ICGAN architecture
       </h2>
     </div>
   </div>
@@ -127,8 +124,10 @@
             Neural audio synthesis methods can achieve high-fidelity and realistic sound generation by utilizing 
             deep generative models. However, such models typically fail to provide convenient or interpretable 
             controls to guide the sound generation, especially with regard to sounds that are hard to describe by 
-            words. This paper proposes an implicit conditioning method for neural audio synthesis that allows for 
-            interpretable control of the acoustic features of synthesized sounds.  Our technique creates a 
+            words. We propose an implicit conditioning method to achieve smooth interpolation between different classes of 
+            sounds with discrete labels. As shown in our architecture, our generator is conditioned on a vector sampled 
+            from a Gaussian distribution with mean and variance parameterized from the encoder. The encoder learns
+            the categorical information from the input Mel spectrograms and guides the generator in an implicit way. Our technique creates a 
             continuous conditioning space that enables timbre manipulation without relying on explicit labels. 
             We further introduce an evaluation metric to explore controllability and demonstrate that our approach 
             is effective in enabling a degree of controlled variation of different sound effects for same-class 
@@ -151,7 +150,7 @@
         <div class="content has-text-justified">
           <p>
             We interpolate our conditioning space between two classes of sounds, one starting a value at 0 while
-            another starting at 1. We show the output probabilities returned from the 
+            another starting at 1. We show the output probabilities returned from the fine-tuned PANNs classifier.
           </p>
         </div>
       </div>
@@ -181,6 +180,7 @@
   </div>
 </section>
 <!-- End in-class sounds -->
+
 
 <!-- Column 3 -->
 <div class="column">
@@ -248,6 +248,8 @@
 </section>
 <!-- End out-of-class sounds -->
 
+
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -279,12 +281,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
