@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
@@ -149,7 +150,8 @@
         <h2 class="title is-3">Interpolation</h2>
         <div class="content has-text-justified">
           <p>
-            We show that our model is capable of 
+            We interpolate our conditioning space between two classes of sounds, one starting a value at 0 while
+            another starting at 1. We show the output probabilities returned from the 
           </p>
         </div>
       </div>
@@ -179,6 +181,51 @@
   </div>
 </section>
 <!-- End in-class sounds -->
+
+<!-- Column 3 -->
+<div class="column">
+  <h4 class="title is-4">DDSP-SFX 1</h4>
+  <audio preload='metadata' controls>
+      <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
+  </audio>
+  <figure class="image">
+      <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="DDSP-SFX 1">
+  </figure>
+
+  <h4 class="title is-4">DDSP-SFX 2</h4>
+  <audio preload='metadata' controls>
+      <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+  </audio>
+  <figure class="image">
+      <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="DDSP-SFX 2">
+  </figure>
+
+  <!-- Add three more sets below -->
+  <h4 class="title is-4">DDSP-SFX 3</h4>
+  <audio preload='metadata' controls>
+      <source src='Reconstruction/Gunshots/DDSP-VAE_049.wav' type='audio/wav'>
+  </audio>
+  <figure class="image">
+      <img src="Reconstruction/Gunshots/ddsp-vae-049.png" alt="DDSP-SFX 3">
+  </figure>
+
+  <h4 class="title is-4">DDSP-SFX 4</h4>
+  <audio preload='metadata' controls>
+      <source src='Reconstruction/Gunshots/DDSP-VAE_050.wav' type='audio/wav'>
+  </audio>
+  <figure class="image">
+      <img src="Reconstruction/Gunshots/ddsp-vae-050.png" alt="DDSP-SFX 4">
+  </figure>
+
+  <h4 class="title is-4">DDSP-SFX 5</h4>
+  <audio preload='metadata' controls>
+      <source src='Reconstruction/Gunshots/DDSP-VAE_051.wav' type='audio/wav'>
+  </audio>
+  <figure class="image">
+      <img src="Reconstruction/Gunshots/ddsp-vae-051.png" alt="DDSP-SFX 5">
+  </figure>
+</div>
+
 
 
 <!-- Out-of-class sounds -->
