@@ -133,5 +133,35 @@ body {
   font-size: smaller;
 }
 
+.section-title {
+    font-weight: bolder;
+    text-align: center; /* Center the title if you want */
+    margin-bottom: 20px; /* Adds some space between the title and the images */
+    /* Add more styling properties as needed */
+}
+
+.images-audio-container {
+    display: flex;
+    justify-content: center; /* Adjust this to center to keep items closer together */
+    flex-wrap: wrap;
+    gap: 20px; /* This sets a fixed gap between columns */
+}
+
+figure {
+    text-align: center;
+    margin: 10px 0;
+    max-width: 300px; /* Set a maximum width to prevent stretching */
+}
+
+figcaption {
+    margin-bottom: 8px;
+}
+
+audio {
+    margin-top: 8px;
+}
 
 
+.image img {
+    width: 150%;  
+}
